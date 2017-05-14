@@ -1,0 +1,10 @@
+---
+component: scripts
+---
+
+<!-- Includes site-specific Javascript -->
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="{{javascript}}/main.js"></script>
+{{#each javascriptFiles}}
+	<script src="{{../javascript}}/{{this}}"></script>
+{{/each}}
